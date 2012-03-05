@@ -1,0 +1,5 @@
+This server only supports the HTTP method GET. 
+
+It'll probably only build with Visual Studio. You may need to remove the "#include <WinSock2.h>" from your Windows.h file (It causes issues sometimes).
+
+It will serve files relative to where it's run from. For example if it's run from C:\ and you then open http://localhost/Example.html, the file sent will be C:\Example.html.
